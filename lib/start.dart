@@ -1,5 +1,5 @@
 import 'dart:io';
-import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
+// import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 // import 'package:sqflite/sqflite.dart';
 //import 'package:dot_pagination_swiper/dot_pagination_swiper.dart';
@@ -169,9 +169,9 @@ class _startState extends State<start> {
                 title: Text('call to us',
                     style: TextStyle(color: Colors.black, fontSize: 20)),
                 subtitle: Text(""),
-                onTap: () async {
-                  await FlutterPhoneDirectCaller.callNumber('0945003939');
-                },
+                // onTap: () async {
+                //   await FlutterPhoneDirectCaller.callNumber('0945003939');
+                // },
               ),
             ],
           ),

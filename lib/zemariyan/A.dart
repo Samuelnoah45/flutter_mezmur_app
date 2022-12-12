@@ -39,7 +39,7 @@ class _arenetState extends State<arenet> {
        
          ListView(
       children: <Widget>[
-
+          for(var i=0; i<10;i++)
            
              Padding(
               padding: const EdgeInsets.fromLTRB(8,8,8,0),
@@ -65,227 +65,228 @@ class _arenetState extends State<arenet> {
                );  
                 }),
             ),
-             Padding(
-              padding: const EdgeInsets.fromLTRB(8,8,8,0),
-              child: RaisedButton(
-                color: Colors.blueGrey,
-              
-                child: Row(
-                  children: <Widget>[
-                    Expanded(child:
-                    Text('ላመሰግንህ',style: TextStyle(color:Colors.white),)),
-                     
-                    IconButton(icon :Icon(Icons.play_arrow,color: Colors.orangeAccent,), onPressed:(){
-                    }) ],
-                ),
-                onPressed:(){
-            showDialog(context: context,
-               builder: (BuildContext context){
-                 
-                 return AlertDialog(content: SingleChildScrollView (child: Text("ላመሰግንህ ይገባኛል \nዝምታ ከእኔ ሊርቅ ግድ ይለኛል \nውለታ ያለበት ሰው \nመስዋዕቱ ሁሌ ምሥጋና ነው  \nአዝ፦ ላመስግንህ እጆቼን አንስቼ \nላመስግንህ በፊትህ ወድቄ \nላመስግንህ ጌታ ላመስግንህ \nላመስግንህ ኢየሱስ ላመስግንህን \n\nላመስግንህ ላመስግንህ \n\nተነሺ ዘምሪ ተቀኚ ለክብሩ \nይለኛል ሁልጊዜ የበዛ ምህረቱ \nየሳቅ ሆኖልኛል የደስታ ነው ቤቴ \nእፎይታ ሆኖልኝ በኢየሱስ አባቴ\nአዝ፦ ላመስግንህ እጆቼን አንስቼ \nላመስግንህ በፊትህ ወድቄ \nላመስግንህ ጌታ ላመስግንህ \nላመስግንህ ኢየሱስ ላመስግንህን \nላመስግንህ ላመስግንህ \nልዘምርልህ ላመስግንህ \n\nሞኝነት አይደለም ለእርሱ መዘመሬ\nነፍሱን ሰጥቶኝ ነው በሕይወት መኖሬ \nታዲያ ላመስግነው የምን ዝምታ ነው \nለወደደኝ ጌታ የፍቅር ቅኔ ነው \n\nአዝ፦ ላመስግንህ እጆቼን አንስቼ \nላመስግንህ በፊትህ ወድቄ \nላመስግንህ ጌታ ላመስግንህ \nላመስግንህ ኢየሱስ ላመስግንህን (2x)" )),
-            title:Text('ላመሰግንህ',textAlign: TextAlign.center,style: TextStyle(color:Colors.red),) ,);}
-               );  
-                }),
-            ),
-             Padding(
-              padding: const EdgeInsets.fromLTRB(8,8,8,0),
-              child: RaisedButton(
-                color: Colors.blueGrey,
-              
-                child: Row(
-                  children: <Widget>[
-                    Expanded(child:
-                    Text('ህልውናህ',style: TextStyle(color:Colors.white),)),
-                     
-                    IconButton(icon :Icon(Icons.play_arrow,color: Colors.orangeAccent,), onPressed:(){
-                    }) ],
-                ),
-                onPressed:(){
-            showDialog(context: context,
-               builder: (BuildContext context){
-                 
-                 return AlertDialog(content: SingleChildScrollView (child: Text(" ህልውናህ ይውረሰው ሕይወቴን \nመንፈስህ ይቃኘው ማንነቴን \nታማኝ ባሪያህ ሆኜ ላገልግል \nከመረጥከኝ ወደህ ልዘምርልህ (2x) \n\nአትሂድብኝ ከእኔ (2x) \nመኖር አልችልም ለብቻዬ (2x) \n\nለብቻዬ አልፈልግም ለብቻዬ (3x) \nለብቻዬ አልፈልግም ከአንተ ተለይቼ \n\nድካሜ ቢበዛ ቢያይልም \nስታግዘኝ እንጂ መሄድህ \nነው . (1) . አልወድም \nበምህረትህ ብዛት ወደ ቤትህ እገባለሁ \nኃጢአትን ነው እንጂ \nኃጢአተኛን አትጠላም አውቃለሁ \n\nያለ አንተማ መኖር አልችልም እኔ (4x) \n\nህልውናህ ይውረሰው ሕይወቴን \nመንፈስህ ይቃኘው ማንነቴን \nታማኝ ባሪያህ ሆኜ ላገልግል \nከመረጥከኝ ወደህ ልዘምርልህ (2x) \n\nአትሂድብኝ ከእኔ (2x) \nመኖር አልችልም ለብቻዬ (2x) \n\nለብቻዬ አልፈልግም ለብቻዬ (3x) \nለብቻዬ አልፈልግም ከአንተ ተለይቼ \n\nዝም ካልክ ፈራለሁ ድምፅህን ካልሰማው \nህልውናህ ከሌለ እንደ ሞተ ሰው ሆናለሁ \nጭር ሲል እፈራለሁ ድምፅህን ካልሰማው \nህልውናህ ከሌለ እንደ ሞተ ሰው ሆናለሁ \n\nእግዚአብሔር ያለ አንተ መኖር አልችልም \nከሩቁ ከደጅ መሆን አያምርብኝም (2x) " )),
-            title:Text('ህልውናህ',textAlign: TextAlign.center,style: TextStyle(color:Colors.red),) ,);}
-               );  
-                }),
-            ),
-             Padding(
-              padding: const EdgeInsets.fromLTRB(8,8,8,0),
-              child: RaisedButton(
-                color: Colors.blueGrey,
-              
-                child: Row(
-                  children: <Widget>[
-                    Expanded(child:
-                    Text('ማልጄ ልነሳ',style: TextStyle(color:Colors.white),)),
-                     
-                    IconButton(icon :Icon(Icons.play_arrow,color: Colors.orangeAccent,), onPressed:(){
-                    }) ],
-                ),
-                onPressed:(){
-            showDialog(context: context,
-               builder: (BuildContext context){
-                 
-                 return AlertDialog(content: SingleChildScrollView (child: Text("ጠላቴ ብዙ ብዙ ይጮሃል \nጆሮም አልሰጠው ይደክማል \nለእኔ የሆነልኝ እንደዚህ ነው \nየዜማ ጊዜ ደርሶ ወይን አብቦልኝ ነው (2x) \n\nበለሱን የጠበቀ ፍሬዋን ይበላል \nጌታውን የጠበቀ ይከብራል \nከአምላኩን ተማምኖ የከሰረ የታል \nበጊዜው ሰዓቱ ሁሉ አምሮለታል (2x) \nማልጄ ልነሳ ከበሮዬን ላንሣ \nአምላኬን ላመስግን ላሰማ የድል ዜማ \nአስጨናቂው ለሊት አልፎልኛል \nኢየሱስ ብርሃኔ በርቶልኛል (2x) \n\nውሎ የማድር ብሆን ከንጉሥ ደጅ አፍ \nክፉ የሚታሰበ ከንጉሥ ወዳጅ \nጌታውን ለጠበቀ ነገሩ ተገለበጠ \nበክፉው ምክር ላይ እግዚአብሔር ተገለጠ (2x) \n\nማልጄ ልነሳ ከበሮዬን ላንሣ \nአምላኬን ላመስግን ላሰማ የድል ዜማ \nአስጨናቂው ለሊት አልፎልኛል \nኢየሱስ ብርሃኔ በርቶልኛል (2x)" )),
-            title:Text('ማልጄ ልነሳ',textAlign: TextAlign.center,style: TextStyle(color:Colors.red),) ,);}
-               );  
-                }),
-            ),
-             Padding(
-              padding: const EdgeInsets.fromLTRB(8,8,8,0),
-              child: RaisedButton(
-                color: Colors.blueGrey,
-              
-                child: Row(
-                  children: <Widget>[
-                    Expanded(child:
-                    Text('እኔን ለክብር',style: TextStyle(color:Colors.white),)),
-                     
-                    IconButton(icon :Icon(Icons.play_arrow,color: Colors.orangeAccent,), onPressed:(){
-                    }) ],
-                ),
-                onPressed:(){
-            showDialog(context: context,
-               builder: (BuildContext context){
-                 
-                 return AlertDialog(content: SingleChildScrollView (child: Text("እኔን ለክብር ለሽልማት ያበቃኝ\nእግዚአብሔር ከትቢያ ላይ አነሳኝ (2x) \nበሰው ዓይንም አልሞላ \nነኝ እኮ ደካማ \nግን እኔ ማን ነኝ የተወደድኩኝ \nበእግዚአብሔር የተመረጥኩኝ (2x) \n\nከሰው ተራ የሚያድን መልካም ነገር የለኝ \nጐሽ የእኔ ልጅ ተብሎ የሚያስመሰግን \nምህረትህና ፍቅርህ ሰው አድርገውኛል \nከቅዱሳን ጋራ ያዘምሩኛል \n\nአዝ፦ ተሰጥቼ ፊትህ ሆኜ እኔ ባመልክህ \nያንስብሃል ለውለታህ ሲታሰብ (2x) \nእርቃንህን አደባባይ እንደ ወንጀለኛ \nምንም ሳታጠፋ ስለ እኔ ተገፋህ \nያ ሁሉ ልፋትህ እኔን ለማዳን ነው \nከክብርህ ወርደህ ዝቅ ዝቅ ያልከው \n\nአዝ፦ ተሰጥቼ ፊትህ ሆኜ እኔ ባመልክህ \nያንስብሃል ለውለታህ ሲታሰብ (2x) \n\nእኔን ለክብር ለሽልማት ያበቃኝ \nእግዚአብሔር ከትቢያ ላይ አነሳኝ (2x) \nበሰው ዓይንም አልሞላ \nነኝ እኮ ደካማ \nግን እኔ ማን ነኝ የተወደድኩኝ \nበእግዚአብሔር የተመረጥኩኝ (2x) \n\nሰው ሰውን የሚወደው በእራሱ ምርጫ ነው \nድካም ያለበትን ማነው የሚቀበለው \nአንተ ግን ስትወደኝ ስትቀበለኝ \nደካማ ነሽ ብለህ ፊትህን አልነሳኸኝ \n\nአዝ፦ ተሰጥቼ ፊትህ ሆኜ እኔ ባመልክህ \nያንስብሃል ለውለታህ ሲታሰብ (2x)  " )),
-            title:Text('እኔን ለክብር',textAlign: TextAlign.center,style: TextStyle(color:Colors.red),) ,);}
-               );  
-                }),
-            ),
-             Padding(
-              padding: const EdgeInsets.fromLTRB(8,8,8,0),
-              child: RaisedButton(
-                color: Colors.blueGrey,
-              
-                child: Row(
-                  children: <Widget>[
-                    Expanded(child:
-                    Text('ቆይቼ',style: TextStyle(color:Colors.white),)),
-                     
-                    IconButton(icon :Icon(Icons.play_arrow,color: Colors.orangeAccent,), onPressed:(){
-                    }) ],
-                ),
-                onPressed:(){
-            showDialog(context: context,
-               builder: (BuildContext context){
-                 
-                 return AlertDialog(content: SingleChildScrollView (child: Text("ቆይቼ ደጁን ስጠና ዘንበል አለ አምላኬ (2x) \nንዝንዝሽ ምንድን ነው ዞር በይ አላለም ከፊቴ (2x) \nቆይቼ ደጁን ስጠና ዘንበል አለ አምላኬ (2x) \nንዝንዝሽ ምንድን ነው ዞር በይ አላለም ከፊቴ (2x) \nምክሩ ፈረሰ ጠላቴ ያሰበው ሀሳቡ \nሊያጠፋኝ አቅዶ ዙሪያዬን መክበቡ \nከንቱ ሆኖ ቀረ ጠላቴ ሀሳቡ (2x) \n\nእግዚአብሔር ተባረክ (8x) \n\nቆይቼ ደጁን ስጠና ዘንበል አለ አምላኬ (2x) \nንዝንዝሽ ምንድን ነው ዞር በይ አላለም ከፊቴ (2x) \nቆይቼ ደጁን ስጠና ዘንበል አለ አምላኬ (2x) \nንዝንዝሽ ምንድንነው ዞር በይ አላለም ከፊቴ (2x) \nዋጋ አግኝቷልና ጩኸቴ \nአቤቱ ያልኩት ተንበርክኬ \nስለ ክርክሬ አይደለ ሙግቴ \nሁሉን የሚያይ ነው ፈረደልኝ ለእኔ (2x) \n\nእግዚአብሔር ተባረክ (፲6x)" )),
-            title:Text('ቆይቼ',textAlign: TextAlign.center,style: TextStyle(color:Colors.red),) ,);}
-               );  
-                }),
-            ),
-            
-             Padding(
-              padding: const EdgeInsets.fromLTRB(8,8,8,0),
-              child: RaisedButton(
-                color: Colors.blueGrey,
-              
-                child: Row(
-                  children: <Widget>[
-                    Expanded(child:
-                    Text('አዶናይ',style: TextStyle(color:Colors.white),)),
-                     
-                    IconButton(icon :Icon(Icons.play_arrow,color: Colors.orangeAccent,), onPressed:(){
-                    }) ],
-                ),
-                onPressed:(){
-            showDialog(context: context,
-               builder: (BuildContext context){
-                 
-                 return AlertDialog(content: SingleChildScrollView (child: Text("አዝ፦ አዶናይ አዶናይ ነህ (2x) \nኤልሻዳይ ኤልሻዳይ ነህ (2x) \nሁሉን ቻይ ሁሉን ቻይ ነህ (2x) \n\nማንም አልነበር ከጐኔ \nነፍሴ ስትጨነቅ ስገፋ ብቻዬን \nደርሶ የመከረኝ ድካሜን አንስቶ ኃይልን አስታጠቀኝ (2x) \n\nአዝ፦ አዶናይ አዶናይ ነህ (2x) \nኤልሻዳይ ኤልሻዳይ ነህ (2x) \nሁሉን ቻይ ሁሉን ቻይ ነህ (2x) \n\nረዳትም የለኝ ከጐኔ \nነፍሴ ስትጨነቅ ሲከብደኝ ችግሬ \nኢየሱስ ነው ደርሶ ያሳረፈኝ \nእንባዬን ከዓይኔ ያበሰልኝ (2x) \n\nአዝ፦ አዶናይ አዶናይ ነህ (2x) \nኤልሻዳይ ኤልሻዳይ ነህ (2x) \nሁሉን ቻይ ሁሉን ቻይ ነህ (2x)  " )),
-            title:Text('አዶናይ',textAlign: TextAlign.center,style: TextStyle(color:Colors.red),) ,);}
-               );  
-                }),
-            ),
-             Padding(
-              padding: const EdgeInsets.fromLTRB(8,8,8,0),
-              child: RaisedButton(
-                color: Colors.blueGrey,
-              
-                child: Row(
-                  children: <Widget>[
-                    Expanded(child:
-                    Text('ላሰናዳ ቤቴን',style: TextStyle(color:Colors.white),)),
-                     
-                    IconButton(icon :Icon(Icons.play_arrow,color: Colors.orangeAccent,), onPressed:(){
-                    }) ],
-                ),
-                onPressed:(){
-            showDialog(context: context,
-               builder: (BuildContext context){
-                 
-                 return AlertDialog(content: SingleChildScrollView (child: Text("ይመጣል ኢየሱስ \nኢየሱስ ይመጣል \n\nበታላቅ ብርሃን ተገልጦ መልአኩ \nአዋጅ ነገራቸው ለእረኞች ሁሉ \nንጉሥ ተወለደ በቤተልሔም ከተማ \nሄዳችሁ ስገዱ በግርግም አለና (2x) \n\nመላዕክት ያወጁለት እረኞች የሰገዱለት \n\nአዝ፦ ይሄ ወዳጄ ድንገት ይመጣል \nእንዳልቀር ከደጅ ላሰናዳው ቤቴን (2x) \n\nላሰናዳው ቤቴን \nንፁህ ላድረገው ሕይወቴን (2x) \n\nላሰናዳው ቤቴን \nኢየሱስ ይመጣል \nኢየሱስ ይመጣል \n\nበቃላ ገሊላ ጀመረ ተዓምሩ \nየአባቱን ፈቃድ ፈፀመ ትዕዛዙን \nስለ ሰው ልጅ ኃጢአት በመስቀል የሞተው \nኢየሱስ ይመጣል ቤቴን ላሰናዳው\n\nአዝ፦ ይሄ ወዳጄ ድንገት ይመጣል \nእንዳልቀር ከደጅ ላሰናዳው ቤቴን \nላሰናዳው ቤቴን \nንፁህ ላድረገው ሕይወቴን (2x) \nእኔስ ልሁን ከልባሞቹ \nመቅረዜን ልሙላ አላንቀላፋ \nድንገት ሲመጣ ይኼ ወዳጄ \nእንዳልቀር ኋላ ካሁኑ ልንቃ \n\nአዝ፦ ይሄ ወዳጄ ድንገት ይመጣል \nእንዳልቀር ከደጅ ላሰናዳው ቤቴን \nላሰናዳው ቤቴን \nንፁህ ላድረገው ሕይወቴን (2x) \n\nየምድሩ ክብር ዝናው \nሲደምቅልኝ አቤት ጭብጨባው \nሞቅ ብሎ እንዳልዘነጋ \nተይ ነፍሴ ሙግትሽህ ምንድን ነው \nአይግረምሽ አይድነቅሽ \nመዝገብም አይሆን ለላይኛው ቤቴ \n\nተይ ተይኝ ነፍሴ ተይኝ \nከአምላክሽ ጋራ ተስማሚልኝ \nየሚረባን የሚያውቅ እርሱ አይደለም ዎይ \nየሚበጅሽንስ እርሱ አይደለም ዎይ \nበቃ ተይኛ ነፍሴ ተይኝ \nከአምላክሽ ጋራ ተስማሚልኝ " )),
-            title:Text('ላሰናዳ ቤቴን',textAlign: TextAlign.center,style: TextStyle(color:Colors.red),) ,);}
-               );  
-                }),
-            ),
-             Padding(
-              padding: const EdgeInsets.fromLTRB(8,8,8,0),
-              child: RaisedButton(
-                color: Colors.blueGrey,
-              
-                child: Row(
-                  children: <Widget>[
-                    Expanded(child:
-                    Text('እግዚአብሔር ሲናገ',style: TextStyle(color:Colors.white),)),
-                     
-                    IconButton(icon :Icon(Icons.play_arrow,color: Colors.orangeAccent,), onPressed:(){
-                    }) ],
-                ),
-                onPressed:(){
-            showDialog(context: context,
-               builder: (BuildContext context){
-                 
-                 return AlertDialog(content: SingleChildScrollView (child: Text("የሚገርመኝ እኔ ቅጥሩ ታላቅ ነው \nማንም እንዳይነካኝ ለእኔ ያሰበው \nተዘልለሽ ኑሪ እኔ ከአንቺ ጋር ነኝ \nለምን ትፈሪያለሽ . (1) . \n\nአዝ፦ እግዚአብሔር ሲናገር \nሰማሁ ተነሳሁ \nእኔ ከአንቺ ጋር ነኝ \nሰላም ኑሪ አለኝ (2x) \n\nእኔን የሚጠብቅ አይተኛ አያንቀላፋ \nይልቁን በእሳቱ ጠላቴን አጠፋ \nክንዱ ተዘርግታ አርፌ በጌታ \nሳልሰጋ ኖራለሁ ሁልጊዜም በደስታ \n\nእርግማን እንዳይሰራ በዘመኔ \nሟርትም እንዳይሰራ በዘመኔ \nቅጥር ሆንከኝ መድህኔ (3x) \n\nአዝ፦ እግዚአብሔር ሲናገር \nሰማሁ ተነሳሁ \nእኔ ከአንቺ ጋር ነኝ \nሰላም ኑሪ አለኝ (2x) \n\nየጠላቴን ምክር ዛቻውን እንዳልፈራ \nበእሳት የሚመልስ አለኝ የሚያኮራ \nዙሪያዬ ቢዞር ጠላት ቢጮህ \nመናወጥ አላውቅ ሰላሜ አይጠፋ \n\nእግዚአብሔር ብሎኛል ልጄ እረፊ \nበዘመንሽ ሁሉ ሰላም ለአንቺ \nሰላም ይሁን ከቤትሽ (3x) \n\nአዝ፦ እግዚአብሔር ሲናገር \nሰማሁ ተነሳሁ \nእኔ ከአንቺ ጋር ነኝ \nሰላም ኑሪ አለኝ (2x)  " )),
-            title:Text('እግዚአብሔር ሲናገ',textAlign: TextAlign.center,style: TextStyle(color:Colors.red),) ,);}
-               );  
-                }),
-            ),
-             Padding(
-              padding: const EdgeInsets.fromLTRB(8,8,8,0),
-              child: RaisedButton(
-                color: Colors.blueGrey,
-              
-                child: Row(
-                  children: <Widget>[
-                    Expanded(child:
-                    Text('እንደ እግዚአብሔር ያለ ',style: TextStyle(color:Colors.white),)),
-                     
-                    IconButton(icon :Icon(Icons.play_arrow,color: Colors.orangeAccent,), onPressed:(){
-                    }) ],
-                ),
-                onPressed:(){
-            showDialog(context: context,
-               builder: (BuildContext context){
-                 
-                 return AlertDialog(content: SingleChildScrollView (child: Text("አዝ፦ አይዞህ ባይ ሲጠፋ የሚቆም ከጐኔ \nየልቤን ተረድቶ እንባ የሚያብስ ከዓይኔ (2x) \n\nእንደ እግዚአብሔር ያለ ማንም የለም (3x) \n\nትናንትና እንዴት ይታለፍ \nጭንቅ ነበር ለብቻ ሲታሰብ \nበዙሪያዬ ጠላት ከቦኝ \nማን ያድነኝ ብዬ ተረበሽኩኝ \n\nሰማያት ተከፈቱና \nበተከበበው ከተማ \nምህረቱን አበዛልኛ (2x) \n\nዛሬም ከእኔ ጋራ ነህ (6x) \n\nአዝ፦ አይዞህ ባይ ሲጠፋ የሚቆም ከጐኔ \nየልቤን ተረድቶ እንባ የሚያብስ ከዓይኔ (2x) \n\nእንደ እግዚአብሔር ያለ ማንም የለም (3x) \n\nስደክምበት ዞር በይ ደካማ \nአላለኝ ደግ ነው ጌታ \nአቅም ሆነ ኃይል አስታጠቀኝ \nበከፍታ ላይ አቆመኝ \n\nሰማያት ተከፈቱና \nበተከበበው ከተማ \nምህረቱን አበዛልኛ (2x)\n\nዛሬም ከእኔ ጋራ ነህ (6x)  " )),
-            title:Text('እንደ እግዚአብሔር ያለ ',textAlign: TextAlign.center,style: TextStyle(color:Colors.red),) ,);}
-               );  
-                }),
-            ),
-             Padding(
-              padding: const EdgeInsets.fromLTRB(8,8,8,0),
-              child: RaisedButton(
-                color: Colors.blueGrey,
-              
-                child: Row(
-                  children: <Widget>[
-                    Expanded(child:
-                    Text('እንደገና',style: TextStyle(color:Colors.white),)),
-                     
-                    IconButton(icon :Icon(Icons.play_arrow,color: Colors.orangeAccent,), onPressed:(){
-                    }) ],
-                ),
-                onPressed:(){
-            showDialog(context: context,
-               builder: (BuildContext context){
-                 
-                 return AlertDialog(content: SingleChildScrollView (child: Text("አዝ፦ እንደገና በብዙ ምህረትህ ይቅር አልከኝ \nእንደገና በብዙ ይቅርታህ አከበርከኝ \nእንደገና እንደገና አሄ እንደገና (2x) \n\nእንደ ኃጢአት ብዛት አልፈረከብኝ \nእግዚአብሔር ምህረቱን አልከለከለኝ \nበፊቱ ወድቄ ምህረት ባልኩበት \nይቅርታ በዝቶልኝ ይኸው ዘመርኩለት \n\nአዝ፦ እንደገና በብዙ ምህረትህ ይቅር አልከኝ \nእንደገና በብዙ ይቅርታህ አከበርከኝ \nእንደገና እንደገና አሄ እንደገና (2x) \n\nሊከሱኝ ወደው ኃጢአተኛ ብለው \nበድንጋይ ሊወግሩኝ ዳኛ ፊት አቅርበው \nየተገባኝን ሞት አይገባም ብሎ \nምህረት አረገልኝ ሀፍረቴን ከልክሎ \n\nአዝ፦ እንደገና በብዙ ምህረትህ ይቅር አልከኝ \nእንደገና በብዙ ይቅርታህ አከበርከኝ \nእንደገና እንደገና አሄ እንደገና (2x) \n\nየምህረት አምላክ ደጁ ተከፈተ \nለብዙ በደሌ ይቅርታ . (1) . \nእንደገና ቆሜ ፊቱ ዘምራለሁ \nየማረኝን አምላክ አመሰግናለሁ \n\nአዝ፦ እንደገና በብዙ ምህረትህ ይቅር አልከኝ \nእንደገና በብዙ ይቅርታህ አከበርከኝ \nእንደገና እንደገና አሄ እንደገና (2x)" )),
-            title:Text('እንደገና',textAlign: TextAlign.center,style: TextStyle(color:Colors.red),) ,);}
-               );  
-                }),
-            ),
+
+            //  Padding(
+            //   padding: const EdgeInsets.fromLTRB(8,8,8,0),
+            //   child: RaisedButton(
+            //     color: Colors.blueGrey,
+            //
+            //     child: Row(
+            //       children: <Widget>[
+            //         Expanded(child:
+            //         Text('ላመሰግንህ',style: TextStyle(color:Colors.white),)),
+            //
+            //         IconButton(icon :Icon(Icons.play_arrow,color: Colors.orangeAccent,), onPressed:(){
+            //         }) ],
+            //     ),
+            //     onPressed:(){
+            // showDialog(context: context,
+            //    builder: (BuildContext context){
+            //
+            //      return AlertDialog(content: SingleChildScrollView (child: Text("ላመሰግንህ ይገባኛል \nዝምታ ከእኔ ሊርቅ ግድ ይለኛል \nውለታ ያለበት ሰው \nመስዋዕቱ ሁሌ ምሥጋና ነው  \nአዝ፦ ላመስግንህ እጆቼን አንስቼ \nላመስግንህ በፊትህ ወድቄ \nላመስግንህ ጌታ ላመስግንህ \nላመስግንህ ኢየሱስ ላመስግንህን \n\nላመስግንህ ላመስግንህ \n\nተነሺ ዘምሪ ተቀኚ ለክብሩ \nይለኛል ሁልጊዜ የበዛ ምህረቱ \nየሳቅ ሆኖልኛል የደስታ ነው ቤቴ \nእፎይታ ሆኖልኝ በኢየሱስ አባቴ\nአዝ፦ ላመስግንህ እጆቼን አንስቼ \nላመስግንህ በፊትህ ወድቄ \nላመስግንህ ጌታ ላመስግንህ \nላመስግንህ ኢየሱስ ላመስግንህን \nላመስግንህ ላመስግንህ \nልዘምርልህ ላመስግንህ \n\nሞኝነት አይደለም ለእርሱ መዘመሬ\nነፍሱን ሰጥቶኝ ነው በሕይወት መኖሬ \nታዲያ ላመስግነው የምን ዝምታ ነው \nለወደደኝ ጌታ የፍቅር ቅኔ ነው \n\nአዝ፦ ላመስግንህ እጆቼን አንስቼ \nላመስግንህ በፊትህ ወድቄ \nላመስግንህ ጌታ ላመስግንህ \nላመስግንህ ኢየሱስ ላመስግንህን (2x)" )),
+            // title:Text('ላመሰግንህ',textAlign: TextAlign.center,style: TextStyle(color:Colors.red),) ,);}
+            //    );
+            //     }),
+            // ),
+            //  Padding(
+            //   padding: const EdgeInsets.fromLTRB(8,8,8,0),
+            //   child: RaisedButton(
+            //     color: Colors.blueGrey,
+            //
+            //     child: Row(
+            //       children: <Widget>[
+            //         Expanded(child:
+            //         Text('ህልውናህ',style: TextStyle(color:Colors.white),)),
+            //
+            //         IconButton(icon :Icon(Icons.play_arrow,color: Colors.orangeAccent,), onPressed:(){
+            //         }) ],
+            //     ),
+            //     onPressed:(){
+            // showDialog(context: context,
+            //    builder: (BuildContext context){
+            //
+            //      return AlertDialog(content: SingleChildScrollView (child: Text(" ህልውናህ ይውረሰው ሕይወቴን \nመንፈስህ ይቃኘው ማንነቴን \nታማኝ ባሪያህ ሆኜ ላገልግል \nከመረጥከኝ ወደህ ልዘምርልህ (2x) \n\nአትሂድብኝ ከእኔ (2x) \nመኖር አልችልም ለብቻዬ (2x) \n\nለብቻዬ አልፈልግም ለብቻዬ (3x) \nለብቻዬ አልፈልግም ከአንተ ተለይቼ \n\nድካሜ ቢበዛ ቢያይልም \nስታግዘኝ እንጂ መሄድህ \nነው . (1) . አልወድም \nበምህረትህ ብዛት ወደ ቤትህ እገባለሁ \nኃጢአትን ነው እንጂ \nኃጢአተኛን አትጠላም አውቃለሁ \n\nያለ አንተማ መኖር አልችልም እኔ (4x) \n\nህልውናህ ይውረሰው ሕይወቴን \nመንፈስህ ይቃኘው ማንነቴን \nታማኝ ባሪያህ ሆኜ ላገልግል \nከመረጥከኝ ወደህ ልዘምርልህ (2x) \n\nአትሂድብኝ ከእኔ (2x) \nመኖር አልችልም ለብቻዬ (2x) \n\nለብቻዬ አልፈልግም ለብቻዬ (3x) \nለብቻዬ አልፈልግም ከአንተ ተለይቼ \n\nዝም ካልክ ፈራለሁ ድምፅህን ካልሰማው \nህልውናህ ከሌለ እንደ ሞተ ሰው ሆናለሁ \nጭር ሲል እፈራለሁ ድምፅህን ካልሰማው \nህልውናህ ከሌለ እንደ ሞተ ሰው ሆናለሁ \n\nእግዚአብሔር ያለ አንተ መኖር አልችልም \nከሩቁ ከደጅ መሆን አያምርብኝም (2x) " )),
+            // title:Text('ህልውናህ',textAlign: TextAlign.center,style: TextStyle(color:Colors.red),) ,);}
+            //    );
+            //     }),
+            // ),
+            //  Padding(
+            //   padding: const EdgeInsets.fromLTRB(8,8,8,0),
+            //   child: RaisedButton(
+            //     color: Colors.blueGrey,
+            //
+            //     child: Row(
+            //       children: <Widget>[
+            //         Expanded(child:
+            //         Text('ማልጄ ልነሳ',style: TextStyle(color:Colors.white),)),
+            //
+            //         IconButton(icon :Icon(Icons.play_arrow,color: Colors.orangeAccent,), onPressed:(){
+            //         }) ],
+            //     ),
+            //     onPressed:(){
+            // showDialog(context: context,
+            //    builder: (BuildContext context){
+            //
+            //      return AlertDialog(content: SingleChildScrollView (child: Text("ጠላቴ ብዙ ብዙ ይጮሃል \nጆሮም አልሰጠው ይደክማል \nለእኔ የሆነልኝ እንደዚህ ነው \nየዜማ ጊዜ ደርሶ ወይን አብቦልኝ ነው (2x) \n\nበለሱን የጠበቀ ፍሬዋን ይበላል \nጌታውን የጠበቀ ይከብራል \nከአምላኩን ተማምኖ የከሰረ የታል \nበጊዜው ሰዓቱ ሁሉ አምሮለታል (2x) \nማልጄ ልነሳ ከበሮዬን ላንሣ \nአምላኬን ላመስግን ላሰማ የድል ዜማ \nአስጨናቂው ለሊት አልፎልኛል \nኢየሱስ ብርሃኔ በርቶልኛል (2x) \n\nውሎ የማድር ብሆን ከንጉሥ ደጅ አፍ \nክፉ የሚታሰበ ከንጉሥ ወዳጅ \nጌታውን ለጠበቀ ነገሩ ተገለበጠ \nበክፉው ምክር ላይ እግዚአብሔር ተገለጠ (2x) \n\nማልጄ ልነሳ ከበሮዬን ላንሣ \nአምላኬን ላመስግን ላሰማ የድል ዜማ \nአስጨናቂው ለሊት አልፎልኛል \nኢየሱስ ብርሃኔ በርቶልኛል (2x)" )),
+            // title:Text('ማልጄ ልነሳ',textAlign: TextAlign.center,style: TextStyle(color:Colors.red),) ,);}
+            //    );
+            //     }),
+            // ),
+            //  Padding(
+            //   padding: const EdgeInsets.fromLTRB(8,8,8,0),
+            //   child: RaisedButton(
+            //     color: Colors.blueGrey,
+            //
+            //     child: Row(
+            //       children: <Widget>[
+            //         Expanded(child:
+            //         Text('እኔን ለክብር',style: TextStyle(color:Colors.white),)),
+            //
+            //         IconButton(icon :Icon(Icons.play_arrow,color: Colors.orangeAccent,), onPressed:(){
+            //         }) ],
+            //     ),
+            //     onPressed:(){
+            // showDialog(context: context,
+            //    builder: (BuildContext context){
+            //
+            //      return AlertDialog(content: SingleChildScrollView (child: Text("እኔን ለክብር ለሽልማት ያበቃኝ\nእግዚአብሔር ከትቢያ ላይ አነሳኝ (2x) \nበሰው ዓይንም አልሞላ \nነኝ እኮ ደካማ \nግን እኔ ማን ነኝ የተወደድኩኝ \nበእግዚአብሔር የተመረጥኩኝ (2x) \n\nከሰው ተራ የሚያድን መልካም ነገር የለኝ \nጐሽ የእኔ ልጅ ተብሎ የሚያስመሰግን \nምህረትህና ፍቅርህ ሰው አድርገውኛል \nከቅዱሳን ጋራ ያዘምሩኛል \n\nአዝ፦ ተሰጥቼ ፊትህ ሆኜ እኔ ባመልክህ \nያንስብሃል ለውለታህ ሲታሰብ (2x) \nእርቃንህን አደባባይ እንደ ወንጀለኛ \nምንም ሳታጠፋ ስለ እኔ ተገፋህ \nያ ሁሉ ልፋትህ እኔን ለማዳን ነው \nከክብርህ ወርደህ ዝቅ ዝቅ ያልከው \n\nአዝ፦ ተሰጥቼ ፊትህ ሆኜ እኔ ባመልክህ \nያንስብሃል ለውለታህ ሲታሰብ (2x) \n\nእኔን ለክብር ለሽልማት ያበቃኝ \nእግዚአብሔር ከትቢያ ላይ አነሳኝ (2x) \nበሰው ዓይንም አልሞላ \nነኝ እኮ ደካማ \nግን እኔ ማን ነኝ የተወደድኩኝ \nበእግዚአብሔር የተመረጥኩኝ (2x) \n\nሰው ሰውን የሚወደው በእራሱ ምርጫ ነው \nድካም ያለበትን ማነው የሚቀበለው \nአንተ ግን ስትወደኝ ስትቀበለኝ \nደካማ ነሽ ብለህ ፊትህን አልነሳኸኝ \n\nአዝ፦ ተሰጥቼ ፊትህ ሆኜ እኔ ባመልክህ \nያንስብሃል ለውለታህ ሲታሰብ (2x)  " )),
+            // title:Text('እኔን ለክብር',textAlign: TextAlign.center,style: TextStyle(color:Colors.red),) ,);}
+            //    );
+            //     }),
+            // ),
+            //  Padding(
+            //   padding: const EdgeInsets.fromLTRB(8,8,8,0),
+            //   child: RaisedButton(
+            //     color: Colors.blueGrey,
+            //
+            //     child: Row(
+            //       children: <Widget>[
+            //         Expanded(child:
+            //         Text('ቆይቼ',style: TextStyle(color:Colors.white),)),
+            //
+            //         IconButton(icon :Icon(Icons.play_arrow,color: Colors.orangeAccent,), onPressed:(){
+            //         }) ],
+            //     ),
+            //     onPressed:(){
+            // showDialog(context: context,
+            //    builder: (BuildContext context){
+            //
+            //      return AlertDialog(content: SingleChildScrollView (child: Text("ቆይቼ ደጁን ስጠና ዘንበል አለ አምላኬ (2x) \nንዝንዝሽ ምንድን ነው ዞር በይ አላለም ከፊቴ (2x) \nቆይቼ ደጁን ስጠና ዘንበል አለ አምላኬ (2x) \nንዝንዝሽ ምንድን ነው ዞር በይ አላለም ከፊቴ (2x) \nምክሩ ፈረሰ ጠላቴ ያሰበው ሀሳቡ \nሊያጠፋኝ አቅዶ ዙሪያዬን መክበቡ \nከንቱ ሆኖ ቀረ ጠላቴ ሀሳቡ (2x) \n\nእግዚአብሔር ተባረክ (8x) \n\nቆይቼ ደጁን ስጠና ዘንበል አለ አምላኬ (2x) \nንዝንዝሽ ምንድን ነው ዞር በይ አላለም ከፊቴ (2x) \nቆይቼ ደጁን ስጠና ዘንበል አለ አምላኬ (2x) \nንዝንዝሽ ምንድንነው ዞር በይ አላለም ከፊቴ (2x) \nዋጋ አግኝቷልና ጩኸቴ \nአቤቱ ያልኩት ተንበርክኬ \nስለ ክርክሬ አይደለ ሙግቴ \nሁሉን የሚያይ ነው ፈረደልኝ ለእኔ (2x) \n\nእግዚአብሔር ተባረክ (፲6x)" )),
+            // title:Text('ቆይቼ',textAlign: TextAlign.center,style: TextStyle(color:Colors.red),) ,);}
+            //    );
+            //     }),
+            // ),
+            //
+            //  Padding(
+            //   padding: const EdgeInsets.fromLTRB(8,8,8,0),
+            //   child: RaisedButton(
+            //     color: Colors.blueGrey,
+            //
+            //     child: Row(
+            //       children: <Widget>[
+            //         Expanded(child:
+            //         Text('አዶናይ',style: TextStyle(color:Colors.white),)),
+            //
+            //         IconButton(icon :Icon(Icons.play_arrow,color: Colors.orangeAccent,), onPressed:(){
+            //         }) ],
+            //     ),
+            //     onPressed:(){
+            // showDialog(context: context,
+            //    builder: (BuildContext context){
+            //
+            //      return AlertDialog(content: SingleChildScrollView (child: Text("አዝ፦ አዶናይ አዶናይ ነህ (2x) \nኤልሻዳይ ኤልሻዳይ ነህ (2x) \nሁሉን ቻይ ሁሉን ቻይ ነህ (2x) \n\nማንም አልነበር ከጐኔ \nነፍሴ ስትጨነቅ ስገፋ ብቻዬን \nደርሶ የመከረኝ ድካሜን አንስቶ ኃይልን አስታጠቀኝ (2x) \n\nአዝ፦ አዶናይ አዶናይ ነህ (2x) \nኤልሻዳይ ኤልሻዳይ ነህ (2x) \nሁሉን ቻይ ሁሉን ቻይ ነህ (2x) \n\nረዳትም የለኝ ከጐኔ \nነፍሴ ስትጨነቅ ሲከብደኝ ችግሬ \nኢየሱስ ነው ደርሶ ያሳረፈኝ \nእንባዬን ከዓይኔ ያበሰልኝ (2x) \n\nአዝ፦ አዶናይ አዶናይ ነህ (2x) \nኤልሻዳይ ኤልሻዳይ ነህ (2x) \nሁሉን ቻይ ሁሉን ቻይ ነህ (2x)  " )),
+            // title:Text('አዶናይ',textAlign: TextAlign.center,style: TextStyle(color:Colors.red),) ,);}
+            //    );
+            //     }),
+            // ),
+            //  Padding(
+            //   padding: const EdgeInsets.fromLTRB(8,8,8,0),
+            //   child: RaisedButton(
+            //     color: Colors.blueGrey,
+            //
+            //     child: Row(
+            //       children: <Widget>[
+            //         Expanded(child:
+            //         Text('ላሰናዳ ቤቴን',style: TextStyle(color:Colors.white),)),
+            //
+            //         IconButton(icon :Icon(Icons.play_arrow,color: Colors.orangeAccent,), onPressed:(){
+            //         }) ],
+            //     ),
+            //     onPressed:(){
+            // showDialog(context: context,
+            //    builder: (BuildContext context){
+            //
+            //      return AlertDialog(content: SingleChildScrollView (child: Text("ይመጣል ኢየሱስ \nኢየሱስ ይመጣል \n\nበታላቅ ብርሃን ተገልጦ መልአኩ \nአዋጅ ነገራቸው ለእረኞች ሁሉ \nንጉሥ ተወለደ በቤተልሔም ከተማ \nሄዳችሁ ስገዱ በግርግም አለና (2x) \n\nመላዕክት ያወጁለት እረኞች የሰገዱለት \n\nአዝ፦ ይሄ ወዳጄ ድንገት ይመጣል \nእንዳልቀር ከደጅ ላሰናዳው ቤቴን (2x) \n\nላሰናዳው ቤቴን \nንፁህ ላድረገው ሕይወቴን (2x) \n\nላሰናዳው ቤቴን \nኢየሱስ ይመጣል \nኢየሱስ ይመጣል \n\nበቃላ ገሊላ ጀመረ ተዓምሩ \nየአባቱን ፈቃድ ፈፀመ ትዕዛዙን \nስለ ሰው ልጅ ኃጢአት በመስቀል የሞተው \nኢየሱስ ይመጣል ቤቴን ላሰናዳው\n\nአዝ፦ ይሄ ወዳጄ ድንገት ይመጣል \nእንዳልቀር ከደጅ ላሰናዳው ቤቴን \nላሰናዳው ቤቴን \nንፁህ ላድረገው ሕይወቴን (2x) \nእኔስ ልሁን ከልባሞቹ \nመቅረዜን ልሙላ አላንቀላፋ \nድንገት ሲመጣ ይኼ ወዳጄ \nእንዳልቀር ኋላ ካሁኑ ልንቃ \n\nአዝ፦ ይሄ ወዳጄ ድንገት ይመጣል \nእንዳልቀር ከደጅ ላሰናዳው ቤቴን \nላሰናዳው ቤቴን \nንፁህ ላድረገው ሕይወቴን (2x) \n\nየምድሩ ክብር ዝናው \nሲደምቅልኝ አቤት ጭብጨባው \nሞቅ ብሎ እንዳልዘነጋ \nተይ ነፍሴ ሙግትሽህ ምንድን ነው \nአይግረምሽ አይድነቅሽ \nመዝገብም አይሆን ለላይኛው ቤቴ \n\nተይ ተይኝ ነፍሴ ተይኝ \nከአምላክሽ ጋራ ተስማሚልኝ \nየሚረባን የሚያውቅ እርሱ አይደለም ዎይ \nየሚበጅሽንስ እርሱ አይደለም ዎይ \nበቃ ተይኛ ነፍሴ ተይኝ \nከአምላክሽ ጋራ ተስማሚልኝ " )),
+            // title:Text('ላሰናዳ ቤቴን',textAlign: TextAlign.center,style: TextStyle(color:Colors.red),) ,);}
+            //    );
+            //     }),
+            // ),
+            //  Padding(
+            //   padding: const EdgeInsets.fromLTRB(8,8,8,0),
+            //   child: RaisedButton(
+            //     color: Colors.blueGrey,
+            //
+            //     child: Row(
+            //       children: <Widget>[
+            //         Expanded(child:
+            //         Text('እግዚአብሔር ሲናገ',style: TextStyle(color:Colors.white),)),
+            //
+            //         IconButton(icon :Icon(Icons.play_arrow,color: Colors.orangeAccent,), onPressed:(){
+            //         }) ],
+            //     ),
+            //     onPressed:(){
+            // showDialog(context: context,
+            //    builder: (BuildContext context){
+            //
+            //      return AlertDialog(content: SingleChildScrollView (child: Text("የሚገርመኝ እኔ ቅጥሩ ታላቅ ነው \nማንም እንዳይነካኝ ለእኔ ያሰበው \nተዘልለሽ ኑሪ እኔ ከአንቺ ጋር ነኝ \nለምን ትፈሪያለሽ . (1) . \n\nአዝ፦ እግዚአብሔር ሲናገር \nሰማሁ ተነሳሁ \nእኔ ከአንቺ ጋር ነኝ \nሰላም ኑሪ አለኝ (2x) \n\nእኔን የሚጠብቅ አይተኛ አያንቀላፋ \nይልቁን በእሳቱ ጠላቴን አጠፋ \nክንዱ ተዘርግታ አርፌ በጌታ \nሳልሰጋ ኖራለሁ ሁልጊዜም በደስታ \n\nእርግማን እንዳይሰራ በዘመኔ \nሟርትም እንዳይሰራ በዘመኔ \nቅጥር ሆንከኝ መድህኔ (3x) \n\nአዝ፦ እግዚአብሔር ሲናገር \nሰማሁ ተነሳሁ \nእኔ ከአንቺ ጋር ነኝ \nሰላም ኑሪ አለኝ (2x) \n\nየጠላቴን ምክር ዛቻውን እንዳልፈራ \nበእሳት የሚመልስ አለኝ የሚያኮራ \nዙሪያዬ ቢዞር ጠላት ቢጮህ \nመናወጥ አላውቅ ሰላሜ አይጠፋ \n\nእግዚአብሔር ብሎኛል ልጄ እረፊ \nበዘመንሽ ሁሉ ሰላም ለአንቺ \nሰላም ይሁን ከቤትሽ (3x) \n\nአዝ፦ እግዚአብሔር ሲናገር \nሰማሁ ተነሳሁ \nእኔ ከአንቺ ጋር ነኝ \nሰላም ኑሪ አለኝ (2x)  " )),
+            // title:Text('እግዚአብሔር ሲናገ',textAlign: TextAlign.center,style: TextStyle(color:Colors.red),) ,);}
+            //    );
+            //     }),
+            // ),
+            //  Padding(
+            //   padding: const EdgeInsets.fromLTRB(8,8,8,0),
+            //   child: RaisedButton(
+            //     color: Colors.blueGrey,
+            //
+            //     child: Row(
+            //       children: <Widget>[
+            //         Expanded(child:
+            //         Text('እንደ እግዚአብሔር ያለ ',style: TextStyle(color:Colors.white),)),
+            //
+            //         IconButton(icon :Icon(Icons.play_arrow,color: Colors.orangeAccent,), onPressed:(){
+            //         }) ],
+            //     ),
+            //     onPressed:(){
+            // showDialog(context: context,
+            //    builder: (BuildContext context){
+            //
+            //      return AlertDialog(content: SingleChildScrollView (child: Text("አዝ፦ አይዞህ ባይ ሲጠፋ የሚቆም ከጐኔ \nየልቤን ተረድቶ እንባ የሚያብስ ከዓይኔ (2x) \n\nእንደ እግዚአብሔር ያለ ማንም የለም (3x) \n\nትናንትና እንዴት ይታለፍ \nጭንቅ ነበር ለብቻ ሲታሰብ \nበዙሪያዬ ጠላት ከቦኝ \nማን ያድነኝ ብዬ ተረበሽኩኝ \n\nሰማያት ተከፈቱና \nበተከበበው ከተማ \nምህረቱን አበዛልኛ (2x) \n\nዛሬም ከእኔ ጋራ ነህ (6x) \n\nአዝ፦ አይዞህ ባይ ሲጠፋ የሚቆም ከጐኔ \nየልቤን ተረድቶ እንባ የሚያብስ ከዓይኔ (2x) \n\nእንደ እግዚአብሔር ያለ ማንም የለም (3x) \n\nስደክምበት ዞር በይ ደካማ \nአላለኝ ደግ ነው ጌታ \nአቅም ሆነ ኃይል አስታጠቀኝ \nበከፍታ ላይ አቆመኝ \n\nሰማያት ተከፈቱና \nበተከበበው ከተማ \nምህረቱን አበዛልኛ (2x)\n\nዛሬም ከእኔ ጋራ ነህ (6x)  " )),
+            // title:Text('እንደ እግዚአብሔር ያለ ',textAlign: TextAlign.center,style: TextStyle(color:Colors.red),) ,);}
+            //    );
+            //     }),
+            // ),
+            //  Padding(
+            //   padding: const EdgeInsets.fromLTRB(8,8,8,0),
+            //   child: RaisedButton(
+            //     color: Colors.blueGrey,
+            //
+            //     child: Row(
+            //       children: <Widget>[
+            //         Expanded(child:
+            //         Text('እንደገና',style: TextStyle(color:Colors.white),)),
+            //
+            //         IconButton(icon :Icon(Icons.play_arrow,color: Colors.orangeAccent,), onPressed:(){
+            //         }) ],
+            //     ),
+            //     onPressed:(){
+            // showDialog(context: context,
+            //    builder: (BuildContext context){
+            //
+            //      return AlertDialog(content: SingleChildScrollView (child: Text("አዝ፦ እንደገና በብዙ ምህረትህ ይቅር አልከኝ \nእንደገና በብዙ ይቅርታህ አከበርከኝ \nእንደገና እንደገና አሄ እንደገና (2x) \n\nእንደ ኃጢአት ብዛት አልፈረከብኝ \nእግዚአብሔር ምህረቱን አልከለከለኝ \nበፊቱ ወድቄ ምህረት ባልኩበት \nይቅርታ በዝቶልኝ ይኸው ዘመርኩለት \n\nአዝ፦ እንደገና በብዙ ምህረትህ ይቅር አልከኝ \nእንደገና በብዙ ይቅርታህ አከበርከኝ \nእንደገና እንደገና አሄ እንደገና (2x) \n\nሊከሱኝ ወደው ኃጢአተኛ ብለው \nበድንጋይ ሊወግሩኝ ዳኛ ፊት አቅርበው \nየተገባኝን ሞት አይገባም ብሎ \nምህረት አረገልኝ ሀፍረቴን ከልክሎ \n\nአዝ፦ እንደገና በብዙ ምህረትህ ይቅር አልከኝ \nእንደገና በብዙ ይቅርታህ አከበርከኝ \nእንደገና እንደገና አሄ እንደገና (2x) \n\nየምህረት አምላክ ደጁ ተከፈተ \nለብዙ በደሌ ይቅርታ . (1) . \nእንደገና ቆሜ ፊቱ ዘምራለሁ \nየማረኝን አምላክ አመሰግናለሁ \n\nአዝ፦ እንደገና በብዙ ምህረትህ ይቅር አልከኝ \nእንደገና በብዙ ይቅርታህ አከበርከኝ \nእንደገና እንደገና አሄ እንደገና (2x)" )),
+            // title:Text('እንደገና',textAlign: TextAlign.center,style: TextStyle(color:Colors.red),) ,);}
+            //    );
+            //     }),
+            // ),
             
             
              ],
